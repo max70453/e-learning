@@ -31,7 +31,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="home">
     <!-- Spinner Start -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -40,11 +40,9 @@
     </div>
     <!-- Spinner End -->
 
-
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0" >
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <!-- <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Электронное обучение</h2> -->
             <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Кружок программирования</h2>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -52,11 +50,10 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Главная</a>
-                <a href="#services" class="nav-item nav-link">Сервисы</a>
+                <a href="#home" class="nav-item nav-link active">Главная</a>
                 <a href="#about" class="nav-item nav-link">О нас</a>
-                <a href="#categories" class="nav-item nav-link">Курсы</a>
-                <a href="#team" class="nav-item nav-link">Наша команда</a>
+                <a href="#categories" class="nav-item nav-link">Кружки</a>
+                <a href="#team" class="nav-item nav-link">Преподаватели</a>
                 <a href="#testimonial" class="nav-item nav-link">Отзывы</a>
                 <a href="#contact" class="nav-item nav-link">Контакты</a>
             </div>
@@ -74,7 +71,7 @@
                         <div class="container">
                             <div class="row justify-content-start">
                                 <div class="col-sm-10 col-lg-8">
-                                    <h5 class="text-primary text-uppercase mb-3 animated slideInDown">лучшие онлайн-курсы</h5>
+                                    <h5 class="text-primary text-uppercase mb-3 animated slideInDown">лучшие онлайн-кружки</h5>
                                     <h1 class="display-3 text-white animated slideInDown">Лучшая платформа онлайн-обучения</h1>
                                     <p class="fs-5 text-white mb-4 pb-2">Выбор современных профессионалов</p>
                                     <a href="" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Подробнее</a>
@@ -114,7 +111,7 @@
                         <div class="service-item text-center pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-graduation-cap text-primary mb-4"></i>
-                                <h5 class="mb-3">Инструкторы</h5>
+                                <h5 class="mb-3">Преподаватели</h5>
                                 <p>
                                     Экспертность, поддержка, мотивация, профессионализм.
                                 </p>
@@ -175,7 +172,7 @@
                         Добро пожаловать в увлекательный мир электронного обучения! Здесь, в удобной онлайн среде, вас ждут бесконечные возможности для самосовершенствования и обогащения знаний. 
                     </p>
                     <p class="mb-4">
-                        Здесь вы найдете курсы по самым разнообразным темам - от языков и технических навыков до искусства и бизнеса. Благодаря доступности и разнообразию предложений, каждый найдет то, что поможет ему достичь новых успехов и целей.
+                        Здесь вы найдете кружки по самым разнообразным темам. Благодаря доступности и разнообразию предложений, каждый найдет то, что поможет ему достичь новых успехов и целей.
                     </p>
                     <div class="row gy-2 gx-4 mb-4">
                         <div class="col-sm-6">
@@ -188,7 +185,7 @@
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Сетевые возможности</p>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Разнообразие курсов</p>
+                            <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Разнообразие кружков</p>
                         </div>
                         <div class="col-sm-6">
                             <p class="mb-0"><i class="fa fa-arrow-right text-primary me-2"></i>Интерактивность</p>
@@ -211,7 +208,7 @@
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h6 class="section-title bg-white text-center text-primary px-3">категории</h6>
-                    <h1 class="mb-5">Категории курсов</h1>
+                    <h1 class="mb-5">Категории кружков</h1>
                 </div>
                 <div class="row g-3">
                     <div class="col-lg-7 col-md-6">
@@ -221,7 +218,7 @@
                                     <img class="img-fluid" src="img/cat-11.1.jpg" alt="">
                                     <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                         <h5 class="m-0">Веб-дизайн</h5>
-                                        <small class="text-primary">49 Курсов</small>
+                                        <small class="text-primary">14 Курсов</small>
                                     </div>
                                 </a>
                             </div>
@@ -230,16 +227,16 @@
                                     <img class="img-fluid" src="img/cat-111.jpg" alt="">
                                     <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
                                         <h5 class="m-0">Графический-дизайн</h5>
-                                        <small class="text-primary">45 Курсов</small>
+                                        <small class="text-primary">15 Курсов</small>
                                     </div>
                                 </a>
                             </div>
                             <div class="col-lg-6 col-md-12 wow zoomIn" data-wow-delay="0.5s">
                                 <a class="position-relative d-block overflow-hidden" href="">
-                                    <img class="img-fluid" src="img/cat-2.2.jpg" alt="">
+                                    <img class="img-fluid" src="img/cat-python.jpg" alt="">
                                     <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin: 1px;">
-                                        <h5 class="m-0">Редактирование видео</h5>
-                                        <small class="text-primary">35 Курсов</small>
+                                        <h5 class="m-0">python</h5>
+                                        <small class="text-primary">13 Курсов</small>
                                     </div>
                                 </a>
                             </div>
@@ -247,10 +244,10 @@
                     </div>
                     <div class="col-lg-5 col-md-6 wow zoomIn" data-wow-delay="0.7s" style="min-height: 350px;">
                         <a class="position-relative d-block h-100 overflow-hidden" href="">
-                            <img class="img-fluid position-absolute w-100 h-100" src="img/cat-4.jpg" alt="" style="object-fit: cover;">
+                            <img class="img-fluid position-absolute w-100 h-100" src="img/cat-44.jpg" alt="" style="object-fit: cover;">
                             <div class="bg-white text-center position-absolute bottom-0 end-0 py-2 px-3" style="margin:  1px;">
-                                <h5 class="m-0">Онлайн маркетинг</h5>
-                                <small class="text-primary">29 Курсов</small>
+                                <h5 class="m-0">PHP</h5>
+                                <small class="text-primary">19 Курсов</small>
                             </div>
                         </a>
                     </div>
@@ -265,8 +262,8 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">Курсы</h6>
-                    <h1 class="mb-5">Популярные курсы</h1>
+                    <h6 class="section-title bg-white text-center text-primary px-3">Кружки</h6>
+                    <h1 class="mb-5">Популярные кружки</h1>
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -274,31 +271,17 @@
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid" src="img/course-1.1.jpg" alt="">
                                 <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                    <a 
-                                        tabindex="0" 
-                                        data-bs-toggle="popover" 
-                                        data-bs-trigger="focus" 
-                                        data-bs-title="Программа курса:" 
-                                        data-bs-content="
-                                            1. Основы цветовой гаммы, композиции и типографии
-                                            2. Работа с HTML: теги, структура документа
-                                            3. Создание адаптивных и мобильно-отзывчивых макетов
-                                            4. Основы JavaScript: переменные, условия, циклы
-                                            5. Самостоятельное создание макета и верстки веб-страницы" 
-                                        class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" 
-                                        style="border-radius: 30px 0 0 30px;">подробнее</a>
-                                    <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">присоединяйтесь</a>
+                                    <!-- Кнопка-триггер модального окна -->
+                                    <button type="button" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop-num-1">подробнее</button>
+                                    <a href="#contact" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">присоединяйтесь</a>
                                 </div>
                             </div>
                             <div class="text-center p-4 pb-0">
-                                <!-- <h3 class="mb-0">$149.00</h3> -->
                                 <div class="mb-3">
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
-                                    <!-- <small class="fa fa-star text-primary"></small> -->
-                                    <!-- <small>(123)</small> -->
                                 </div>
                                 <h5 class="mb-4">Курс веб-дизайна и разработки для начинающих</h5>
                             </div>
@@ -314,31 +297,18 @@
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid" src="img/course-2.jpg" alt="">
                                 <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                    <a 
-                                        tabindex="0" 
-                                        data-bs-toggle="popover" 
-                                        data-bs-trigger="focus" 
-                                        data-bs-title="Программа курса:" 
-                                        data-bs-content="
-                                            1. Введение в веб-разработку и основы HTML
-                                            2. Стилизация веб-страниц с помощью CSS
-                                            3. Основы интерактивности с JavaScript
-                                            4. Создание адаптивного и мобильного дизайна
-                                            5. Проектная работа: разработка простого веб-приложения" 
-                                        class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" 
-                                        style="border-radius: 30px 0 0 30px;">подробнее</a>
-                                    <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">присоединяйтесь</a>
+                                <!-- Кнопка-триггер модального окна -->
+                                <button type="button" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop-num-2">подробнее</button>
+                                <a href="#contact" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">присоединяйтесь</a>
                                 </div>
                             </div>
                             <div class="text-center p-4 pb-0">
-                                <!-- <h3 class="mb-0">$149.00</h3> -->
                                 <div class="mb-3">
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
                                     <small class="fa fa-star text-primary"></small>
-                                    <!-- <small>(123)</small> -->
                                 </div>
                                 <h5 class="mb-4">Введение в веб-разработку для начинающих</h5>
                             </div>
@@ -354,20 +324,9 @@
                             <div class="position-relative overflow-hidden">
                                 <img class="img-fluid" src="img/course-3.3.jpg" alt="">
                                 <div class="w-100 d-flex justify-content-center position-absolute bottom-0 start-0 mb-4">
-                                    <a 
-                                        tabindex="0" 
-                                        data-bs-toggle="popover" 
-                                        data-bs-trigger="focus" 
-                                        data-bs-title="Программа курса:" 
-                                        data-bs-content="
-                                            1. Основы программирования на Scratch
-                                            2. Создание игровых персонажей и анимации
-                                            3. Создание игровых уровней и логики игры
-                                            4. Управление и взаимодействие объектов
-                                            5. Проектная работа: разработка собственной игры" 
-                                        class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" 
-                                        style="border-radius: 30px 0 0 30px;">подробнее</a>
-                                    <a href="#" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">присоединяйтесь</a>
+                                <!-- Кнопка-триггер модального окна -->
+                                <button type="button" class="flex-shrink-0 btn btn-sm btn-primary px-3 border-end" style="border-radius: 30px 0 0 30px;" data-bs-toggle="modal" data-bs-target="#staticBackdrop-num-3">подробнее</button>
+                                <a href="#contact" class="flex-shrink-0 btn btn-sm btn-primary px-3" style="border-radius: 0 30px 30px 0;">присоединяйтесь</a>
                                 </div>
                             </div>
                             <div class="text-center p-4 pb-0">
@@ -395,13 +354,154 @@
     </section>
     <!-- Courses End -->
 
+        <!-- Модальное окно для 1-го курса-->
+        <div class="modal fade" id="staticBackdrop-num-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Основы веб-дизайна и разработки для начинающих</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <h5>Описание:</h5>
+                        Кружок предназначен для тех, кто только начинает свой путь в веб-дизайне и разработке. 
+                        Ученики изучат основные концепции создания привлекательных и функциональных веб-сайтов, 
+                        а также основы программирования для веба.
+                    </p>
+                    <div>
+                        <h5>Программа кружка</h5>
+                        <ol>
+                            <li>Введение в веб-дизайн</li>
+                            <li>Основы HTML и CSS</li>
+                            <li>Верстка и адаптивный дизайн</li>
+                            <li>Основы JavaScript и взаимодействие с сайтом</li>
+                            <li>Проектная работа: Создание прототипа веб-сайта</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h5>Цели кружка:</h5>
+                        <p> 
+                            - Создание привлекательных и функциональных веб-сайтов с учетом основных принципов дизайна и программирования. <br />
+                            - Разработка адаптивных и мобильно-отзывчивых интерфейсов. <br />
+                            - Понимание базовых принципов веб-разработки и возможность самостоятельной работы над веб-проектами. <br />
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно для 2-го курса-->
+        <div class="modal fade" id="staticBackdrop-num-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Введение в веб-разработку</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <h5>Описание:</h5>
+                        Кружок "Введение в веб-разработку" предназначен для начинающих программистов, 
+                        желающих погрузиться в мир веб-технологий. Ученики будут изучать основные концепции HTML, CSS и JavaScript,
+                        создавать свои первые веб-страницы и знакомиться с основами веб-дизайна.
+                    </p>
+                    <div>
+                        <h5>Программа кружка</h5>
+                        <ol>
+                            <li>Введение в веб-разработку и основы HTML</li>
+                            <li>Стилизация веб-страниц с помощью CSS</li>
+                            <li>Основы интерактивности с JavaScript</li>
+                            <li>Создание адаптивного и мобильного дизайна</li>
+                            <li>Проектная работа: разработка простого веб-приложения</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h5>Цели кружка:</h5>
+                        <p>
+                            - Познакомить учеников с основами веб-разработки <br />
+                            - Помочь студентам освоить ключевые технологии для создания веб-сайтов <br />
+                            - Вдохновить на дальнейшее изучение программирования и веб-разработки <br />
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Преимущества кружка</h5>
+                        <p>
+                            - Преподавание с использованием практических заданий и проектной работы <br />
+                            - Индивидуальный подход к каждому ученику <br />
+                            - Возможность развивать креативные навыки и логическое мышление <br />
+                            - Сертификат об окончании курса для успешно завершивших обучение <br />
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <!-- Модальное окно для 3-го курса-->
+        <div class="modal fade" id="staticBackdrop-num-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">Игровая разработка на платформе Scratch</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        <h5>Описание:</h5>
+                        Кружок "Игровая разработка на платформе Scratch" призван познакомить учеников с основами программирования через 
+                        создание собственных компьютерных игр. Ученики будут изучать принципы создания игровых персонажей, уровней, 
+                        управления и взаимодействия объектов.
+                    </p>
+                    <div>
+                        <h5>Программа кружка</h5>
+                        <ol>
+                            <li>Основы программирования на Scratch</li>
+                            <li>Создание игровых персонажей и анимации</li>
+                            <li>Создание игровых уровней и логики игры</li>
+                            <li>Управление и взаимодействие объектов</li>
+                            <li>Проектная работа: разработка собственной игры</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h5>Цели кружка:</h5>
+                        <p>
+                            - Представить ученикам мир программирования через игровую разработку <br />
+                            - Развить логическое мышление и творческий подход к проблемам <br />
+                            - Продемонстрировать возможности создания собственных проектов с помощью Scratch <br />
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Преимущества кружка</h5>
+                        <p>
+                            - Увлекательное обучение через создание игр <br />
+                            - Стимулирование креативного мышления и инноваций <br />
+                            - Обучение в дружественной и мотивирующей обстановке <br />
+                            - Создание собственной игры как основа для дальнейшего развития навыков <br />
+                        </p>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
     <!-- Team Start -->
     <section id="team">
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">наставники</h6>
-                    <h1 class="mb-5">эксперты наставники</h1>
+                    <h6 class="section-title bg-white text-center text-primary px-3">Преподаватели</h6>
+                    <!-- <h1 class="mb-5">Учителя</h1> -->
                 </div>
                 <div class="row g-4 justify-content-center">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -418,7 +518,7 @@
                             </div>
                             <div class="text-center p-4">
                                 <h5 class="mb-0">Соколов М. Е.</h5>
-                                <small>Наставник</small>
+                                <small>Учитель</small>
                             </div>
                         </div>
                     </div>
@@ -436,7 +536,7 @@
                             </div>
                             <div class="text-center p-4">
                                 <h5 class="mb-0">Савина Ю.И.</h5>
-                                <small>наставник</small>
+                                <small>Учитель</small>
                             </div>
                         </div>
                     </div>
@@ -454,7 +554,7 @@
                             </div>
                             <div class="text-center p-4">
                                 <h5 class="mb-0">Иванов И.В.</h5>
-                                <small>наставник</small>
+                                <small>Учитель</small>
                             </div>
                         </div>
                     </div>
@@ -511,7 +611,7 @@
                         </div>
                     </div>
                     <div class="testimonial-item text-center">
-                        <img class="border rounded-circle p-2 mx-auto mb-3" src="img/ava-4.jpg" style="width: 80px; height: 80px;">
+                        <img class="border rounded-circle p-2 mx-auto mb-3" src="img/ava-4.png" style="width: 80px; height: 80px;">
                         <h5 class="mb-0">Юлия</h5>
                         <div class="testimonial-text bg-light text-center p-4">
                         <p class="mb-0">
@@ -533,12 +633,11 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title bg-white text-center text-primary px-3">связаться с нами</h6>
-                    <h1 class="mb-5">Свяжитесь с нами по Любому Вопросу</h1>
+                    <h6 class="section-title bg-white text-center text-primary px-3">присоединяйтесь</h6>
+                    <h1 class="mb-5">Записаться к нам</h1>
                 </div>
                 <div class="row g-4 justify-content-between">
                     <div class="col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <h5>связаться</h5>
                         <p class="mb-4">Задайте вопрос или оставьте заявку: наша контактная информация</p>
                         <div class="d-flex align-items-center mb-3">
                             <div class="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary" style="width: 50px; height: 50px;">
@@ -610,7 +709,7 @@
     <!-- Footer Start -->
     <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
-            <div class="row g-5">
+            <div class="row g-5 justify-content-between">
                 <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Быстрые ссылки</h4>
                     <a class="btn btn-link" href="">О нас</a>
@@ -632,29 +731,6 @@
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h4 class="text-white mb-3">Галерея</h4>
-                    <div class="row g-2 pt-2">
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-11.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-12.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-13.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-14.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-15.jpg" alt="">
-                        </div>
-                        <div class="col-4">
-                            <img class="img-fluid bg-light p-1" src="img/course-16.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
                     <h4 class="text-white mb-3">Новостная рассылка</h4>
                     <p>Кодовая сводка: обновления, события и полезные материалы для участников кружка.</p>
                     <div class="position-relative mx-auto" style="max-width: 400px;">
@@ -669,9 +745,6 @@
                 <div class="row">
                     <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                         &copy; <a class="border-bottom" href="#">Кружок программирования</a>, All Right Reserved.
-
-                        <!-- Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a><br><br>
-                        Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> -->
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="footer-menu">

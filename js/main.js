@@ -105,15 +105,22 @@
         }
     });
 
+     $(document).ready(function(){
+        $(".nav-item").on('click', function (e) {
+            $(".nav-item").each(function(){
+                $(this).removeClass('active');
+            });
+            $(e.target).addClass('active');
+        });
+    });
+
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
     const popover = new bootstrap.Popover('.popover-dismiss', {
-        trigger: 'focus'
-    })
-    // const popover = new bootstrap.Popover('.example-popover', {
-    //     container: 'body'
-    // })
+        trigger: 'focus',
+        html: true
+    });
     
 })(jQuery);
 
