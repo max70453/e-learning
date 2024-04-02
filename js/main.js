@@ -114,6 +114,76 @@
         });
     });
 
+     //send message
+    $( document ).ready(function() {
+        $.validator.setDefaults({
+            errorClass: 'text-danger'
+        })
+
+        let contactForm = $('.ajax-contact-form');
+
+        contactForm.validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 4
+                },
+                email: {
+                    required: true
+                },
+                message: {
+                    required: true
+                }
+            },
+            messages: {
+                name: {
+                    required: "Имя обязательно",
+                    minlength: jQuery.validator.format("Необходимо ввести как минимум {0} символовы")
+                },
+                email: {
+                    required: "Email обязательн"
+                },
+                message: {
+                    required: "Сообщение обязательно"
+                }
+            },
+            submitHandler: function(form){
+                var str = $(form).serialize();
+                $.ajax({
+                    type: "POST",
+                    url: "http://localhost/contact.php",
+                    //headers: {  "Access-Control-Allow-Origin:": "*"},
+                    data: str,
+                    success: function(xml, textStatus, xhr){
+                        if(xhr.status === 200){
+                            $("#exampleModal").modal("show");
+                        }
+                    },
+                    error: function (jqXHR, exception) {
+                        if (jqXHR.status === 0) {
+                            alert('Не удается подключиться. Проверьте сеть.');
+                        } else if (jqXHR.status == 404) {
+                            alert('Запрошенная страница не найдена (404).');
+                        } else if (jqXHR.status == 500) {
+                            alert('Внутренняя ошибка сервера (500).');
+                        } else if (exception === 'parsererror') {
+                            alert('Не удалось выполнить запрошенный синтаксический анализ JSON.');
+                        } else if (exception === 'timeout') {
+                            alert('Ошибка тайм-аута.');
+                        } else if (exception === 'abort') {
+                            alert('Ajax-запрос прерван.');
+                        } else {
+                            alert('Неперехваченная ошибка. ' + jqXHR.responseText);
+                        }
+                    }
+                });
+                form.reset();
+                return false;
+            }
+        });
+
+    });
+
     const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
     const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
 
